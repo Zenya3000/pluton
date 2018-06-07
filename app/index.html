@@ -42,18 +42,34 @@
 			<div class="col-md-6 item">
 				<div class="control_panel">
 					<div>
-						<button id="up" class="btn btn-default btn_style" value="up">UP</button>
-						<button id="down" class="btn btn-default btn_style" value="down">DOWN</button>
+						<button id="up" class="btn btn-default btn_style move" value="up">UP</button>
+						<button id="down" class="btn btn-default btn_style move" value="down">DOWN</button>
 					</div>
 					<div>
-						<button id="left" class="btn btn-default btn_style" value="left">LEFT</button>
-						<button id="right" class="btn btn-default btn_style" value="right">RIGHT</button>
+						<button id="left" class="btn btn-default btn_style move" value="left">LEFT</button>
+						<button id="right" class="btn btn-default btn_style move" value="right">RIGHT</button>
 					</div>
 					
 					<div>
 						<button id="record" class="btn btn-warning btn_style" value="record">RECORD</button>
 						<button id="play" class="btn btn-success btn_style"  value="play">PLAY</button>
-						<button id="stop" class="btn btn-danger btn_style" value="stop">STOP</button>
+						<button id="stop" class="btn btn-danger btn_style" value="stop">STOP RECORDING</button>
+						<button id="reset" class="btn btn-info btn_style" value="reset">RESET</button>
+					</div>
+
+					<div class="add_info">
+						<div class="form-group step_form">
+							<label for="value_of_step">step size: </label>
+							<input type="number" class="form-control" value="40" id="value_of_step">
+						</div>
+						<div>
+							<span>total:</span>
+							<span id="total">0</span>
+						</div>
+						<div>
+							<span>current:</span>
+							<span id="current">0</span>
+						</div>
 					</div>
 				</div>
 			</div>
